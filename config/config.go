@@ -15,7 +15,7 @@ type Config struct {
 
 func NewConfig() *Config {
 	config := &Config{
-		DBHost:     getEnvOrDefault("DB_HOST", "localhost"),
+		DBHost:     getEnvOrDefault("DB_HOST", "chat-application-postgres-1"),
 		DBUser:     getEnvOrDefault("DB_USER", "postgres"),
 		DBPassword: getEnvOrDefault("DB_PASSWORD", "123321"),
 		DBName:     getEnvOrDefault("DB_NAME", "chat_app"),
